@@ -11,6 +11,8 @@ RUN rm /var/www/html/index.nginx-debian.html && \
 
 COPY nginx.conf /etc/nginx/
 
+COPY johncrisostomo.com.conf conf.d/
+ 
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
